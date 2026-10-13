@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagidi Fred Orya | ICT Professional, Systems Analyst & ML Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/30">
+                    BF
+                </div>
+                <div>
+                    <span class="font-bold text-lg block leading-tight">Bagidi Fred Orya</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">ICT & ML Developer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Expertise</a>
+                <a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a>
+                <a href="#gallery" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Gallery</a>
+                <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md shadow-blue-500/20 transition">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Expertise</a>
+            <a href="#projects" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Projects</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Gallery</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:py-32 overflow-hidden relative">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent dark:from-blue-950/30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">Bagidi Fred Orya</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        ICT Professional, Systems Analyst, and Machine Learning Developer based in Makurdi, Benue State, Nigeria. Building intelligent web systems, secure databases, and AI solutions.
+                    </p>
+
+                    <!-- Contact & Social Badges -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/30 transition flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>Contact Me</span>
+                        </a>
+                        <a href="tel:09125259065" class="px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 font-semibold rounded-xl transition flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                            <span>09125259065</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="flex items-center justify-center lg:justify-start space-x-4 pt-4 text-slate-500 dark:text-slate-400">
+                        <span class="text-xs uppercase font-bold tracking-wider text-slate-400">Connect:</span>
+                        <a href="https://www.linkedin.com/in/fred-bagidi-3393112b8" target="_blank" class="p-2 bg-slate-100 dark:bg-slate-800 hover:text-blue-600 rounded-lg transition" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1F7oMD9neV/" target="_blank" class="p-2 bg-slate-100 dark:bg-slate-800 hover:text-blue-600 rounded-lg transition" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@fred_b02?_r=1&_t=ZS-9ATWQUfk6jZ" target="_blank" class="p-2 bg-slate-100 dark:bg-slate-800 hover:text-blue-600 rounded-lg transition" aria-label="TikTok">
+                            <i data-lucide="video" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-3xl rotate-6 opacity-20 blur-xl"></div>
+                        <img src="images/orya2.jpg" alt="Bagidi Fred Orya coding on laptop" class="relative rounded-3xl object-cover w-full h-full shadow-2xl border-4 border-white dark:border-slate-800">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400 mb-2">Professional Profile</h2>
+                <h3 class="text-3xl font-bold tracking-tight">About Me</h3>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Driven by innovation, data analytics, and digital transformation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        I am <strong>Bagidi Fred Orya</strong>, an accomplished ICT professional, systems analyst, and computer studies instructor with extensive expertise in database administration, user support, full-stack web applications, and machine learning solutions.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Holding a <strong>Bachelor of Science degree in Computer Science</strong> (Second Class Upper Division honors), I combine rigorous academic foundations with practical field experience in data collection tools (KoboToolbox, ODK, CommCare), network infrastructures, and intelligent software engineering.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700">
+                            <span class="block text-2xl font-bold text-blue-600 dark:text-blue-400">B.Sc.</span>
+                            <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Computer Science (2.1)</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700">
+                            <span class="block text-2xl font-bold text-blue-600 dark:text-blue-400">Makurdi</span>
+                            <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Benue State, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center">
+                    <div class="relative w-full max-w-md h-80 rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-700">
+                        <img src="images/orya1.jpg" alt="Fred analyzing neural networks" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise & Tech Stack -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400 mb-2">Technical Competencies</h2>
+                <h3 class="text-3xl font-bold tracking-tight">Skills & Tech Stack</h3>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Tools and technologies I use to architect robust digital systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Web & Database -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                        <i data-lucide="code" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">Web & Backend Dev</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Building dynamic interfaces, school portals, CBT examination platforms, and secure databases.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">HTML / CSS</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">PHP & MySQL</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">Supabase</span>
+                    </div>
+                </div>
+
+                <!-- Data & Machine Learning -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">Data & AI / ML</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Developing machine learning models, text/barcode OCR recognition pipelines, and statistical analysis.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">Python</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">Pandas / NumPy</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">Scikit-Learn</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">OpenCV & EasyOCR</span>
+                    </div>
+                </div>
+
+                <!-- Systems & Field Tools -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">Systems & Field Tools</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Server administration, cPanel hosting, mobile data collection, and graphic design tooling.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">cPanel & DNS</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">KoboToolbox / ODK</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">CommCare</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-lg">CorelDRAW & Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400 mb-2">Portfolio Showcase</h2>
+                <h3 class="text-3xl font-bold tracking-tight">Featured Projects</h3>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Key developments spanning machine learning capstones and web applications.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="images/1.jpg" alt="Fake Drug Text and Barcode Checker" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">3MTT Capstone</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h4 class="text-2xl font-bold">Fake Drug Text/Barcode Checker</h4>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">
+                                Developed as a 3MTT program machine learning capstone project utilizing Python, Pandas, Scikit-Learn, and EasyOCR to parse and verify medical packaging text and barcodes against counterfeit risks.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">Python</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">Scikit-Learn</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">EasyOCR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="images/2.jpg" alt="Machine Learning Model Training Platform" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-indigo-600 text-white text-xs font-semibold rounded-full">AI & Data Analytics</span>
+                    </div>
+                       <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-200 dark:border-slate-800">
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">Python</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">NumPy / Pandas</span>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-200 dark:bg-slate-800 rounded">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section id="gallery" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400 mb-2">Visual Moments</h2>
+                <h3 class="text-3xl font-bold tracking-tight">Gallery & Highlights</h3>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Glimpses into strategic thinking, keynotes, and technical sessions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-md h-64 border border-slate-200 dark:border-slate-800 group relative">
+                    <img src="images/3.jpg" alt="Strategic growth" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                        <span class="text-white text-sm font-semibold">Strategic Planning & Growth</span>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-md h-64 border border-slate-200 dark:border-slate-800 group relative">
+                    <img src="3.jpg" alt="Tech Conference Presentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                        <span class="text-white text-sm font-semibold">Tech Conference & Keynotes</span>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-md h-64 border border-slate-200 dark:border-slate-800 group relative">
+                    <img src="images/4.jpg" alt="Fred the Machine Learning Guru" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                        <span class="text-white text-sm font-semibold">Machine Learning Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-blue-600 dark:text-blue-400 mb-2">Get In Touch</h2>
+                <h3 class="text-3xl font-bold tracking-tight">Let's Build Something Together</h3>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Reach out for collaborations, system analysis, or employment opportunities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="p-6 bg-slate-50 dark:bg-slate-950 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6">
+                        <h4 class="text-xl font-bold">Contact Information</h4>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium">Phone Numbers</span>
+                                <a href="tel:09125259065" class="font-semibold text-slate-800 dark:text-slate-200 hover:text-blue-600 block">09125259065</a>
+                                <a href="tel:07034335687" class="font-semibold text-slate-800 dark:text-slate-200 hover:text-blue-600 block">07034335687</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium">Location</span>
+                                <span class="font-semibold text-slate-800 dark:text-slate-200">Makurdi, Benue State, Nigeria</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+                            <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium mb-3">Connect on Social Media</span>
+                            <div class="flex space-x-3">
+                                <a href="https://www.linkedin.com/in/fred-bagidi-3393112b8" target="_blank" class="p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-blue-600 rounded-xl transition shadow-sm">
+                                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                </a>
+                                <a href="https://www.facebook.com/share/1F7oMD9neV/" target="_blank" class="p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-blue-600 rounded-xl transition shadow-sm">
+                                    <i data-lucide="facebook" class="w-5 h-5"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@fred_b02?_r=1&_t=ZS-9ATWQUfk6jZ" target="_blank" class="p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-blue-600 rounded-xl transition shadow-sm">
+                                    <i data-lucide="video" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form id="contact-form" class="p-8 bg-slate-50 dark:bg-slate-950 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Your Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Your Email</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Subject</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" placeholder="Project Inquiry / Job Opportunity">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/30 transition flex items-center justify-center space-x-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span>Send Message</span>
+                        </button>
+                        <p id="form-success" class="hidden text-center text-sm font-semibold text-emerald-600">Thank you! Your message has been sent successfully.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
+                    BF
+                </div>
+                <span class="font-semibold text-white">Bagidi Fred Orya</span>
+            </div>
+
+            <div class="flex space-x-4 text-slate-400">
+                <a href="https://www.linkedin.com/in/fred-bagidi-3393112b8" target="_blank" class="hover:text-white transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="https://www.facebook.com/share/1F7oMD9neV/" target="_blank" class="hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="https://www.tiktok.com/@fred_b02?_r=1&_t=ZS-9ATWQUfk6jZ" target="_blank" class="hover:text-white transition"><i data-lucide="video" class="w-5 h-5"></i></a>
+            </div>
+
+            <p class="text-xs">&copy; 2026 Bagidi Fred Orya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check local storage or system preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Contact form simulation
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formSuccess.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
+
